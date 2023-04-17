@@ -1,0 +1,90 @@
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: $background-color-white-footer;
+  @media screen and (max-width: calc($tablet - 0.02px)) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+}
+
+.footer__container {
+  transition: background-color 300ms ease-in-out;
+  @media screen and (max-width: calc($tablet - 0.02px)) {
+    max-width: 480px;
+
+    padding-top: 29px;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: $tablet;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+
+    padding-top: 30px;
+    padding-bottom: 28px;
+  }
+}
+
+.footer__text {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $footer-text;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+  }
+}
+
+.footer__text--position {
+  @media screen and (min-width: $tablet) {
+    margin-right: 5px;
+  }
+}
+
+.footer__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: calc($tablet - 0.02px)) {
+    margin-top: 10px;
+  }
+}
+
+.footer__icon {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.footer__link {
+  text-decoration-line: underline;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $hover;
+  }
+}

@@ -1,0 +1,36 @@
+<li class="film-card" >
+    
+    <div data-btn>
+        <img class="film-card__small-image" src="https://image.tmdb.org/t/p/w500/{{poster_path}}" alt="{{title}}"
+        loading="lazy" data-id="{{id}}" />
+        <button class="trailer-player-btn visually-hidden" type="button"  aria-label="Play trailer" data-btn-page>
+                       
+            <svg width="50" height="50" class="trailer-player__svg" viewbox="0 0 32 32">
+           <path class="svg__path-first" fill="#cf6f55" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+           <path class="svg__path-second" fill="#c06046" d="M31.725 18.964l-20.129-12.305-1.707 19.713 7.182 5.592c7.341-0.485 13.328-5.921 14.654-12.999z"></path>
+           <path class="svg__path-third" fill="#fff" d="M9.889 26.372v-20.743l17.179 10.372-17.179 10.372zM12.382 10.047v11.906l9.86-5.953-9.86-5.953z"></path>
+        
+           </svg>
+        </button>
+    </div>
+
+    <div class="info">
+        <h2 class="info__title">
+            {{#if title}}
+            {{title}}
+            {{/if}}
+        </h2>
+        <div class="info__genre-year">
+            <p class="info__genre">
+                {{#if genreList}}
+                {{genreList}}
+                {{/if}}
+            </p>
+            <p class="info__year">
+                {{#if year}}
+                &nbsp|&nbsp{{year}}
+                {{/if}}
+            </p>
+        </div>
+    </div>
+</li>

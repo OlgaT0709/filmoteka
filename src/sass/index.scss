@@ -1,2 +1,31 @@
+@import './utils/variables';
 @import './common';
-@import './example';
+@import './utils/base';
+
+@import './utils/visually-hidden';
+@import './utils/container';
+
+//CТИЛІ ХЕДЕРА
+@import './components/header';
+
+//  СТИЛІ ФУТЕРА
+@import './components/footer';
+
+// СТИЛІ МОДАЛКИ
+@import './components/modal';
+@import './components/loader';
+
+// СТИЛІ ГАЛЕРЕЇ
+@import './components/gallery';
+
+// СТИЛІ ПАГІНАЦІЇ
+@import './components/pagination';
+
+// СТИЛІ УЧАСНИКІВ КОМАНДИ
+@import './components/team';
+
+// СТИЛІ ТЕМНОЇ ТЕМИ
+@import './utils/theme-changer';
+
+//Стилі для кнопки зміни мови
+@import './utils/language-changer';
