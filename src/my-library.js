@@ -7,7 +7,7 @@ import { paginationLocalStorage } from './js/paginationIn-library';
 import localstorage from './js/service/localstorage';
 import renderFilms from './js/renderfilms';
 import theme from './js/theme';
-import searchByName from './js/searchByName';
+import searchByName from './js/searchbyname';
 import languageApi from './js/language-changer';
 import {onGalleryReview, showBlankPage} from './js/service/blank-page'
 
